@@ -1,0 +1,164 @@
+html, body {
+  height: 100%; }
+  html h1, html h2, html p, html ul, body h1, body h2, body p, body ul {
+    font-family: 'Montserrat';
+    font-size: 16px; }
+  html #Splash, body #Splash {
+    background-image: radial-gradient(#59c848, #275220);
+    color: #fff;
+    text-align: center;
+    height: 100vh;
+    padding: 20vh 0;
+    box-sizing: border-box;
+    position: relative; }
+    html #Splash h1, html #Splash h2, body #Splash h1, body #Splash h2 {
+      text-shadow: 2px 2px 1px #888; }
+    html #Splash h1, body #Splash h1 {
+      font-size: 8em; }
+    html #Splash h2, body #Splash h2 {
+      font-size: 3em; }
+    html #Splash p, body #Splash p {
+      font-size: 1.5em;
+      margin-top: 1.5em; }
+    html #Splash ul, body #Splash ul {
+      font-size: 2em; }
+      html #Splash ul li, body #Splash ul li {
+        display: inline-block;
+        margin: 0 1em;
+        padding: .15em .25em;
+        border: 2px dashed rgba(255, 255, 255, 0);
+        border-radius: 1em; }
+        html #Splash ul li a, body #Splash ul li a {
+          color: #fff;
+          text-decoration: none; }
+      html #Splash ul li:hover, body #Splash ul li:hover {
+        border: 2px dashed #fff;
+        border-radius: 1em;
+        transition-duration: .5s;
+        cursor: pointer; }
+    html #Splash span.glyphicon-chevron-down, body #Splash span.glyphicon-chevron-down {
+      font-size: 4em;
+      margin-top: 1.5em; }
+    html #Splash #temp, body #Splash #temp {
+      transition: all 1s ease-out; }
+    html #Splash .fade-out, body #Splash .fade-out {
+      opacity: 0;
+      transition: all 1s ease-out; }
+  html .content, body .content {
+    margin: 0 10em; }
+  html #About, body #About {
+    background-color: #fff;
+    padding-bottom: 20px;
+    position: relative; }
+    html #About #headshot, body #About #headshot {
+      width: 40%;
+      float: left;
+      margin: 0 2em .5em 0; }
+      html #About #headshot img, body #About #headshot img {
+        width: 100%; }
+    html #About h2, body #About h2 {
+      font-size: 5em;
+      color: #111883; }
+    html #About p, body #About p {
+      font-size: 1.5em; }
+  html .scroll, body .scroll {
+    overflow-y: scroll; }
+  html #Work, body #Work {
+    background-image: radial-gradient(#59c848, #275220);
+    background-attachment: fixed;
+    color: #fff;
+    text-align: center;
+    padding-bottom: 20px;
+    position: relative; }
+    html #Work .project, body #Work .project {
+      /*height: 60vh*/
+      opacity: 0;
+      transform: translateY(3em);
+      transition: all 1s ease-out; }
+    html #Work .fade-in, body #Work .fade-in {
+      opacity: 1;
+      transform: translateY(0);
+      transition: all 1s ease-out; }
+    html #Work h2, body #Work h2 {
+      font-size: 5em;
+      text-align: center; }
+    html #Work h3, body #Work h3 {
+      font-size: 3em;
+      text-align: center;
+      margin-bottom: 2px; }
+    html #Work a, body #Work a {
+      color: #fff;
+      text-decoration: none;
+      border-bottom: 1px dashed rgba(0, 0, 0, 0); }
+    html #Work a.github, body #Work a.github {
+      margin-bottom: 5px;
+      display: inline-block; }
+    html #Work a:hover, body #Work a:hover {
+      border-bottom: 1px dashed #fff;
+      transition-duration: .5s; }
+    html #Work p, body #Work p {
+      font-size: 1.2em;
+      text-align: justify; }
+    html #Work .workImage img, body #Work .workImage img {
+      width: 100%; }
+    html #Work ul, body #Work ul {
+      list-style-type: disc;
+      margin-left: 2em;
+      text-align: left; }
+      html #Work ul li, body #Work ul li {
+        margin-bottom: 1em; }
+        html #Work ul li ul, body #Work ul li ul {
+          text-align: center;
+          margin-left: 0; }
+          html #Work ul li ul li, body #Work ul li ul li {
+            margin: 2px auto;
+            display: inline-block;
+            border: 1px solid #fff;
+            border-radius: 5px;
+            padding: 2px;
+            text-align: justify; }
+  html #Contact, body #Contact {
+    background-color: #fff;
+    padding-bottom: 20px;
+    position: relative; }
+    html #Contact #buttons, body #Contact #buttons {
+      text-align: center;
+      color: #111883; }
+    html #Contact a, body #Contact a {
+      color: #111883;
+      display: inline-block;
+      padding: 1em; }
+    html #Contact a:hover, body #Contact a:hover {
+      background-color: #b9cfff;
+      border-radius: 20px; }
+    html #Contact h2, body #Contact h2 {
+      font-size: 5em;
+      color: #111883; }
+    html #Contact .glyphicon, body #Contact .glyphicon {
+      font-size: 10em; }
+    html #Contact p, body #Contact p {
+      font-size: 3em; }
+    html #Contact .info, body #Contact .info {
+      font-size: 1.5em; }
+    html #Contact .sociallink, body #Contact .sociallink {
+      text-align: center; }
+    html #Contact .social, body #Contact .social {
+      height: 10em;
+      display: block; }
+  html #Resume, body #Resume {
+    background-image: radial-gradient(#59c848, #275220);
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    position: relative; }
+    html #Resume h2, body #Resume h2 {
+      font-size: 5em;
+      color: #fff; }
+    html #Resume a, body #Resume a {
+      display: block;
+      color: #fff;
+      font-size: 2em; }
+    html #Resume object, body #Resume object {
+      display: inline-block; }
+
+/*# sourceMappingURL=main.css.map */

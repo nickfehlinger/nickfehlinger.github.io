@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css" />
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat|Roboto+Mono" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/TweenMax.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js"></script>
+	<script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<script src="js/main.js"></script>
+	<title>Nick Fehlinger Dot Com</title>
+</head>
+<body>
+<div class="container-fluid">
+	<div class="row" id="Splash">
+		<h1 id="name">Nick Fehlinger</h1>
+		<div id="temp">
+			<h2>Development | Design</h2>
+			<p>jump to:</p>
+		</div>
+		<div id="nav">
+			<ul>
+				<li><a href="#About">About Me</a></li>
+				<li><a href="#Work">My Work</a></li>
+				<li><a href="#Contact">Contact</a></li>
+				<li><a href="#Resume">Resumé</a></li>
+			</ul>
+		</div>
+		<div class="col-md-12" id="chevron">
+			<span class="glyphicon glyphicon-chevron-down"></span>
+		</div>
+	</div>
+	<div class="row" id="About">
+		<div class="content">
+			<div id="headshot">
+				<img src="image/headshot.jpg">
+			</div>
+			<div id="bio">
+				<h2>About Me</h2>
+				<p>I’m a full stack web developer with a love for design. I have a background in theater and comedy and I find that there is just about nothing that the basic tenets of improv don’t help me with. I love to throw myself into projects in order to find new and unexpected ways to solve problems and expand on ideas.</p>
+			</div>
+		</div>
+	</div>
+	<div class="row" id="Work">
+		<div class="content">
+			<h2>Work</h2>
+			<div id="gigantic" class="project">
+				<h3><a href="http://www.gigantic.work">GIGANTIC</a></h3>
+				<a href="https://github.com/nickfehlinger/GIGANTIC" class="github">github</a>
+				<div class="row">
+					<div class="col-md-5">
+						<p>GIGANTIC is a scheduling and budgeting app for freelancers and contractors.</p>
+						<ul>
+							Key Features:
+							<li>Users enter gigs into the calendar on their dashboard which is powered by full_calendar.</li>
+							<li>GIGANTIC pulls database information as a jSON array and dynamically calculates information with JavaScript to inform the user if they are scheduled to earn enough to make their budget.</li>
+							<li>Built with:
+							<ul>
+								<li>Ruby On Rails</li>
+								<li>JavaScript</li>
+								<li>jQuery</li>
+								<li>jSON</li>
+								<li>Bootstrap v3.3.7</li>
+								<li>full_calendar</li>
+								<li>Google Maps API</li>
+								<li>simple_form</li>
+								<li>Bootstrap 3 Datetime Picker</li>
+								<li>Bootstrap Tour</li>
+								<li>Charts.js</li>
+								<li>Devise</li>
+							</ul>
+							</li>
+						</ul>
+					</div>
+					<div class="col-md-7 workImage"><img src="image/gigantic.jpg"></div>
+				</div>
+			</div>
+			<div class="project" id="fleet">
+				<h3><a href="https://fleet-travel.herokuapp.com">Fleet</a></h3>
+				<a href="https://github.com/nickfehlinger/Fleet" class="github">github</a>
+				<div class="row">
+					<div class="col-md-7 workImage"><img src="image/fleet.jpg"></div>
+					<div class="col-md-5">
+						<p>Fleet is a group planning tool for travellers.</p>
+						<ul>
+							Key Features:
+							<li>Build a group and add your friends. Fleet uses has_friendship to build relationships between users.</li>
+							<li>Suggest destinations and add events to itineraries. Fleet finds the coordinates of the city you chose using geocoder and then feeds them through the Acehopper API to find events in the area.</li>
+							<li>Built with:
+							<ul>
+								<li>Ruby On Rails</li>
+								<li>JavaScript</li>
+								<li>jQuery</li>
+								<li>Bootstrap v3.3.7</li>
+								<li>full_calendar</li>
+								<li>Acehopper API</li>
+								<li>Devise</li>
+								<li>has_friendship</li>
+								<li>jSON</li>
+								<li>Geocoder</li>
+								<li>Paperclip</li>
+							</ul>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div id="scratch" class="project">
+				<h3><a href="https://scratchcooking.herokuapp.com">Scratch</a></h3>
+				<a href="https://github.com/nickfehlinger/Scratch" class="github">github</a>
+				<div class="row">
+					<div class="col-md-5">
+						<p>Scratch is a cooking blog that encourages users to avoid pre-made foods.</p>
+						<ul>
+							Key Features:
+							<li>Users have full CRUD capabilities on posts and comments that they create themselves. They can also like posts.</li>
+							<li>The front page is populated with the most popular posts on the site based on likes. Users can also sort by category or search for posts.</li>
+							<li>Built with:
+							<ul>
+								<li>Ruby On Rails</li>
+								<li>JavaScript</li>
+								<li>Bootstrap v3.3.7</li>
+								<li>Bootstrap Carousel</li>
+								<li>Devise</li>
+							</ul>
+							</li>
+						</ul>
+					</div>
+					<div class="col-md-7 workImage"><img src="image/scratch.jpg"></div>
+				</div>
+			</div>
+			<div class="project" id="float">
+				<h3><a href="https://d5xx0ot1ex0k6.cloudfront.net/">Float Like A Butterfly Sting Like A Jukebox</a></h3>
+				<a href="https://github.com/nickfehlinger/Soundcloud-Jukebox" class="github">github</a>
+				<div class="row">
+					<div class="col-md-7 workImage"><img src="image/float.jpg"></div>
+					<div class="col-md-5">
+						<p>Float Like A Butterfly Sting Like A Jukebox is a JavaScript jukebox that plays 10 different covers and mashups of Crazytown's Butterfly</p>
+						<ul>
+							Key Features:
+							<li>Play, Pause, Stop, Forward, and Backward buttons control the player.</li>
+							<li>Pulls music through a jSON request of Soundcloud's API.</li>
+							<li>Built with:
+							<ul>
+								<li>JavaScript</li>
+								<li>Soundcloud API</li>
+								<li>jSON</li>
+							</ul>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="row" id="Contact">
+		<div class="content">
+			<h2>Contact</h2>
+			<div class="row" id="buttons">
+				<div class="col-md-6">
+					<a href="mailto:nick@nickfehlinger.com">
+						<span class="glyphicon glyphicon-envelope"></span>
+						<p>Email Me</p>
+						<p class="info">nick@nickfehlinger.com</p>
+					</a>
+				</div>
+				<div class="col-md-6">
+					<a href="tel:1-718-902-4420">
+						<span class="glyphicon glyphicon-phone-alt"></span>
+						<p>Call Me</p>
+						<p class="info">718.902.4420</p>
+					</a>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-4 sociallink">
+					<div class="wrapper">
+						<a href="https://github.com/nickfehlinger/"><img class="social" src="image/social_github.png"></a>
+					</div>
+				</div>
+				<div class="col-md-4 sociallink">
+					<a href="https://www.linkedin.com/in/nickfehlinger/"><img class="social" src="image/social_linkedin.png"></a>
+				</div>
+				<div class="col-md-4 sociallink">
+
+					<a href="https://twitter.com/nickfehlinger"><img class="social" src="image/social_twitter.png"></a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="row" id="Resume">
+		<h2>Resumé</h2>
+		<a href="image/NickFehlingerResume.pdf" download>Download PDF</a>
+		<object width="1000" height="1200" data="image/NickFehlingerResume.pdf"></object>
+	</div>
+</div>
+</body>
+</html>

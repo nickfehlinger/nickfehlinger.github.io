@@ -85,7 +85,12 @@ html, body {
     html #Work h3, body #Work h3 {
       font-size: 3em;
       text-align: center;
-      margin-bottom: 2px; }
+      margin-bottom: 2px;
+      transform: scale(1);
+      transition-duration: .5s; }
+    html #Work h3:hover, body #Work h3:hover {
+      transform: scale(1.05);
+      transition-duration: .5s; }
     html #Work a, body #Work a {
       color: #fff;
       text-decoration: none;

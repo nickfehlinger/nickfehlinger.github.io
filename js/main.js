@@ -8,7 +8,6 @@ $(document).ready(function(){
 			triggerHook: .7
 		})
 		.setClassToggle(this, 'fade-in')
-		.addIndicators()
 		.addTo(controller);
 	})
 });

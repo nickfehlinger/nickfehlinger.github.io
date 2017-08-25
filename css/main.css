@@ -73,11 +73,11 @@ html, body {
     html #Work .project, body #Work .project {
       /*height: 60vh*/
       opacity: 0;
-      transform: translateY(3em);
+      transform: scale(0.8);
       transition: all 1s ease-out; }
     html #Work .fade-in, body #Work .fade-in {
       opacity: 1;
-      transform: translateY(0);
+      transform: scale(1);
       transition: all 1s ease-out; }
     html #Work h2, body #Work h2 {
       font-size: 5em;

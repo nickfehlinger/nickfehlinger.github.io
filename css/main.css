@@ -164,6 +164,7 @@ html, body {
       color: #fff;
       font-size: 2em; }
     html #Resume object, body #Resume object {
-      display: inline-block; }
+      display: inline-block;
+      background-color: #fff; }
 
 /*# sourceMappingURL=main.css.map */

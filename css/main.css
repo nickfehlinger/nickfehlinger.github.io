@@ -4,8 +4,10 @@ html, body {
     font-family: 'Montserrat';
     font-size: 16px; }
   html #Splash, body #Splash {
-    background-image: radial-gradient(#59c848, #275220);
-    color: #fff;
+    background-image: url("../image/background.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    color: #444;
     text-align: center;
     height: 100vh;
     padding: 20vh 0;
@@ -29,10 +31,10 @@ html, body {
         border: 2px dashed rgba(255, 255, 255, 0);
         border-radius: 1em; }
         html #Splash ul li a, body #Splash ul li a {
-          color: #fff;
+          color: #444;
           text-decoration: none; }
       html #Splash ul li:hover, body #Splash ul li:hover {
-        border: 2px dashed #fff;
+        border: 2px dashed #444;
         border-radius: 1em;
         transition-duration: .5s;
         cursor: pointer; }
@@ -64,9 +66,10 @@ html, body {
   html .scroll, body .scroll {
     overflow-y: scroll; }
   html #Work, body #Work {
-    background-image: radial-gradient(#59c848, #275220);
+    background-image: url("../image/background.jpg");
+    background-size: cover;
     background-attachment: fixed;
-    color: #fff;
+    color: #444;
     text-align: center;
     padding-bottom: 20px;
     position: relative; }
@@ -92,14 +95,14 @@ html, body {
       transform: scale(1.05);
       transition-duration: .5s; }
     html #Work a, body #Work a {
-      color: #fff;
+      color: #444;
       text-decoration: none;
       border-bottom: 1px dashed rgba(0, 0, 0, 0); }
     html #Work a.github, body #Work a.github {
       margin-bottom: 5px;
       display: inline-block; }
     html #Work a:hover, body #Work a:hover {
-      border-bottom: 1px dashed #fff;
+      border-bottom: 1px dashed #444;
       transition-duration: .5s; }
     html #Work p, body #Work p {
       font-size: 1.2em;
@@ -118,7 +121,7 @@ html, body {
           html #Work ul li ul li, body #Work ul li ul li {
             margin: 2px auto;
             display: inline-block;
-            border: 1px solid #fff;
+            border: 1px solid #444;
             border-radius: 5px;
             padding: 2px;
             text-align: justify; }
@@ -151,17 +154,19 @@ html, body {
       height: 10em;
       display: block; }
   html #Resume, body #Resume {
-    background-image: radial-gradient(#59c848, #275220);
-    color: #fff;
+    background-image: url("../image/background.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    color: #444;
     text-align: center;
     padding: 20px;
     position: relative; }
     html #Resume h2, body #Resume h2 {
       font-size: 5em;
-      color: #fff; }
+      color: #444; }
     html #Resume a, body #Resume a {
       display: block;
-      color: #fff;
+      color: #444;
       font-size: 2em; }
     html #Resume object, body #Resume object {
       display: inline-block;

@@ -5,8 +5,10 @@ html, body{
 	font-size: 16px;
 	}
 	#Splash{
-		background-image: radial-gradient(#59c848, #275220);
-		color: #fff;
+		background-image: url('../image/background.jpg');
+		background-size: cover;
+		background-attachment: fixed;
+		color: #444;
 		text-align: center;
 		height: 100vh;
 		padding: 20vh 0;
@@ -34,13 +36,13 @@ html, body{
 				border: 2px dashed rgba(255,255,255,0);
 				border-radius: 1em;
 				a{
-					color: #fff;
+					color: #444;
 					text-decoration: none;
 				}
 
 			}
 			li:hover{
-				border: 2px dashed #fff;
+				border: 2px dashed #444;
 				border-radius: 1em;
 				transition-duration: .5s;
 				cursor: pointer;
@@ -85,9 +87,10 @@ html, body{
 		overflow-y: scroll;
 	}
 	#Work{
-		background-image: radial-gradient(#59c848, #275220);
+		background-image: url('../image/background.jpg');
+		background-size: cover;
 		background-attachment: fixed;
-		color: #fff;
+		color: #444;
 		text-align: center;
 		padding-bottom: 20px;
 		position: relative;
@@ -118,7 +121,7 @@ html, body{
 			transition-duration: .5s;
 		}
 		a{
-			color: #fff;
+			color: #444;
 			text-decoration: none;
 			border-bottom: 1px dashed rgba(0,0,0,0);
 		}
@@ -127,7 +130,7 @@ html, body{
 			display: inline-block;
 		}
 		a:hover{
-			border-bottom: 1px dashed #fff;
+			border-bottom: 1px dashed #444;
 			transition-duration: .5s;
 		}
 		p{
@@ -151,7 +154,7 @@ html, body{
 					li{
 						margin: 2px auto;
 						display: inline-block;
-						border: 1px solid #fff;
+						border: 1px solid #444;
 						border-radius: 5px;
 						padding: 2px;
 						text-align: justify;
@@ -199,18 +202,20 @@ html, body{
 		}
 	}
 	#Resume{
-		background-image: radial-gradient(#59c848, #275220);
-		color: #fff;
+		background-image: url('../image/background.jpg');
+		background-size: cover;
+		background-attachment: fixed;
+		color: #444;
 		text-align: center;
 		padding: 20px;
 		position: relative;
 		h2{
 			font-size: 5em;
-			color: #fff;
+			color: #444;
 		}
 		a{
 			display: block;
-			color: #fff;
+			color: #444;
 			font-size: 2em;
 		}
 		object{

@@ -16,6 +16,9 @@ html, body{
 		position: relative;
 		h1, h2{
 			text-shadow: 2px 2px 1px #888;
+			opacity: 0;
+			animation: fadein 2s;
+			animation-fill-mode: forwards;
 		}
 		h1{
 			font-size: 8em;
@@ -26,9 +29,17 @@ html, body{
 		p{
 			font-size: 1.5em;
 			margin-top: 1.5em;
+			opacity: 0;
+			animation: fadein 2s;
+			animation-delay: .5s;
+			animation-fill-mode: forwards;
 		}
 		ul{
 			font-size: 2em;
+			opacity: 0;
+			animation: fadein 2s;
+			animation-delay: .5s;
+			animation-fill-mode: forwards;
 			li{
 				display: inline-block;
 				margin: 0 1em;
@@ -51,13 +62,19 @@ html, body{
 		span.glyphicon-chevron-down{
 			font-size: 4em;
 			margin-top: 1.5em;
-		}
-		#temp{
-			transition: all 1s ease-out;
-		}
-		.fade-out{
 			opacity: 0;
-			transition: all 1s ease-out;
+			animation: fadein 2s;
+			animation-delay: 1s;
+			animation-fill-mode: forwards;
+		}
+		@keyframes fadein{
+			from{
+				opacity: 0;
+				transform: translateY(1em);
+			}to{
+				opacity: 1;
+				transform: translateY(0);
+			}
 		}
 	}
 	.content{

@@ -14,38 +14,55 @@ html, body {
     box-sizing: border-box;
     position: relative; }
     html #Splash h1, html #Splash h2, body #Splash h1, body #Splash h2 {
-      text-shadow: 2px 2px 1px #888; }
+      text-shadow: 2px 2px 1px #888;
+      opacity: 0;
+      animation: fadein 2s;
+      animation-fill-mode: forwards; }
     html #Splash h1, body #Splash h1 {
       font-size: 8em; }
     html #Splash h2, body #Splash h2 {
       font-size: 3em; }
     html #Splash p, body #Splash p {
       font-size: 1.5em;
-      margin-top: 1.5em; }
+      margin-top: 1.5em;
+      opacity: 0;
+      animation: fadein 2s;
+      animation-delay: .5s;
+      animation-fill-mode: forwards; }
     html #Splash ul, body #Splash ul {
-      font-size: 2em; }
+      font-size: 2em;
+      opacity: 0;
+      animation: fadein 2s;
+      animation-delay: .5s;
+      animation-fill-mode: forwards; }
       html #Splash ul li, body #Splash ul li {
         display: inline-block;
         margin: 0 1em;
         padding: .15em .25em;
         border: 2px dashed rgba(255, 255, 255, 0);
-        border-radius: 1em; }
+        border-radius: 1em;
+        transition-duration: .5s; }
         html #Splash ul li a, body #Splash ul li a {
           color: #444;
           text-decoration: none; }
       html #Splash ul li:hover, body #Splash ul li:hover {
         border: 2px dashed #444;
         border-radius: 1em;
-        transition-duration: .5s;
         cursor: pointer; }
     html #Splash span.glyphicon-chevron-down, body #Splash span.glyphicon-chevron-down {
       font-size: 4em;
-      margin-top: 1.5em; }
-    html #Splash #temp, body #Splash #temp {
-      transition: all 1s ease-out; }
-    html #Splash .fade-out, body #Splash .fade-out {
+      margin-top: 1.5em;
       opacity: 0;
-      transition: all 1s ease-out; }
+      animation: fadein 2s;
+      animation-delay: 1s;
+      animation-fill-mode: forwards; }
+@keyframes fadein {
+  from {
+    opacity: 0;
+    transform: translateY(1em); }
+  to {
+    opacity: 1;
+    transform: translateY(0); } }
   html .content, body .content {
     margin: 0 10em; }
   html #About, body #About {

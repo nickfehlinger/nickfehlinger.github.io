@@ -1,192 +1,158 @@
-html, body {
-  height: 100%; }
-  html h1, html h2, html p, html ul, body h1, body h2, body p, body ul {
-    font-family: 'Montserrat';
-    font-size: 16px; }
-  html #Splash, body #Splash {
-    background-image: url("../image/background.jpg");
-    background-size: cover;
-    background-attachment: fixed;
-    color: #444;
-    text-align: center;
-    height: 100vh;
-    padding: 20vh 0;
-    box-sizing: border-box;
-    position: relative; }
-    html #Splash h1, html #Splash h2, body #Splash h1, body #Splash h2 {
-      text-shadow: 2px 2px 1px #888;
-      opacity: 0;
-      animation: fadein 2s;
-      animation-fill-mode: forwards; }
-    html #Splash h1, body #Splash h1 {
-      font-size: 8em; }
-    html #Splash h2, body #Splash h2 {
-      font-size: 3em; }
-    html #Splash p, body #Splash p {
-      font-size: 1.5em;
-      margin-top: 1.5em;
-      opacity: 0;
-      animation: fadein 2s;
-      animation-delay: .5s;
-      animation-fill-mode: forwards; }
-    html #Splash ul, body #Splash ul {
-      font-size: 2em;
-      opacity: 0;
-      animation: fadein 2s;
-      animation-delay: .5s;
-      animation-fill-mode: forwards; }
-      html #Splash ul li, body #Splash ul li {
-        display: inline-block;
-        margin: 0 1em;
-        padding: .15em .25em;
-        border: 2px dashed rgba(255, 255, 255, 0);
-        border-radius: 1em;
-        transition-duration: .5s; }
-        html #Splash ul li a, body #Splash ul li a {
-          color: #444;
-          text-decoration: none; }
-      html #Splash ul li:hover, body #Splash ul li:hover {
-        border: 2px dashed #444;
-        border-radius: 1em;
-        cursor: pointer; }
-    html #Splash span.glyphicon-chevron-down, body #Splash span.glyphicon-chevron-down {
-      font-size: 4em;
-      margin-top: 1.5em;
-      opacity: 0;
-      animation: fadein 2s;
-      animation-delay: 1s;
-      animation-fill-mode: forwards; }
-@keyframes fadein {
-  from {
-    opacity: 0;
-    transform: translateY(1em); }
-  to {
-    opacity: 1;
-    transform: translateY(0); } }
-  html .content, body .content {
-    margin: 0 10em; }
-  html #About, body #About {
-    background-color: #fff;
-    padding-bottom: 20px;
-    position: relative; }
-    html #About #headshot, body #About #headshot {
-      width: 40%;
-      float: left;
-      margin: 0 2em .5em 0; }
-      html #About #headshot img, body #About #headshot img {
-        width: 100%; }
-    html #About h2, body #About h2 {
-      font-size: 5em;
-      color: #111883; }
-    html #About p, body #About p {
-      font-size: 1.5em; }
-  html .scroll, body .scroll {
-    overflow-y: scroll; }
-  html #Work, body #Work {
-    background-image: url("../image/background.jpg");
-    background-size: cover;
-    background-attachment: fixed;
-    color: #444;
-    text-align: center;
-    padding-bottom: 20px;
-    position: relative; }
-    html #Work .project, body #Work .project {
-      /*height: 60vh*/
-      opacity: 0;
-      transform: scale(0.8);
-      transition: all 1s ease-out; }
-    html #Work .fade-in, body #Work .fade-in {
-      opacity: 1;
-      transform: scale(1);
-      transition: all 1s ease-out; }
-    html #Work h2, body #Work h2 {
-      font-size: 5em;
-      text-align: center; }
-    html #Work h3, body #Work h3 {
-      font-size: 3em;
-      text-align: center;
-      margin-bottom: 2px;
-      transform: scale(1);
-      transition-duration: .5s; }
-    html #Work h3:hover, body #Work h3:hover {
-      transform: scale(1.05);
-      transition-duration: .5s; }
-    html #Work a, body #Work a {
-      color: #444;
-      text-decoration: none;
-      border-bottom: 1px dashed rgba(0, 0, 0, 0); }
-    html #Work a.github, body #Work a.github {
-      margin-bottom: 5px;
-      display: inline-block; }
-    html #Work a:hover, body #Work a:hover {
-      border-bottom: 1px dashed #444;
-      transition-duration: .5s; }
-    html #Work p, body #Work p {
-      font-size: 1.2em;
-      text-align: justify; }
-    html #Work .workImage img, body #Work .workImage img {
-      width: 100%; }
-    html #Work ul, body #Work ul {
-      list-style-type: disc;
-      margin-left: 2em;
-      text-align: left; }
-      html #Work ul li, body #Work ul li {
-        margin-bottom: 1em; }
-        html #Work ul li ul, body #Work ul li ul {
-          text-align: center;
-          margin-left: 0; }
-          html #Work ul li ul li, body #Work ul li ul li {
-            margin: 2px auto;
-            display: inline-block;
-            border: 1px solid #444;
-            border-radius: 5px;
-            padding: 2px;
-            text-align: justify; }
-  html #Contact, body #Contact {
-    background-color: #fff;
-    padding-bottom: 20px;
-    position: relative; }
-    html #Contact #buttons, body #Contact #buttons {
-      text-align: center;
-      color: #111883; }
-    html #Contact a, body #Contact a {
-      color: #111883;
-      display: inline-block;
-      padding: 1em; }
-    html #Contact a:hover, body #Contact a:hover {
-      background-color: #b9cfff;
-      border-radius: 20px; }
-    html #Contact h2, body #Contact h2 {
-      font-size: 5em;
-      color: #111883; }
-    html #Contact .glyphicon, body #Contact .glyphicon {
-      font-size: 10em; }
-    html #Contact p, body #Contact p {
-      font-size: 3em; }
-    html #Contact .info, body #Contact .info {
-      font-size: 1.5em; }
-    html #Contact .sociallink, body #Contact .sociallink {
-      text-align: center; }
-    html #Contact .social, body #Contact .social {
-      height: 10em;
-      display: block; }
-  html #Resume, body #Resume {
-    background-image: url("../image/background.jpg");
-    background-size: cover;
-    background-attachment: fixed;
-    color: #444;
-    text-align: center;
-    padding: 20px;
-    position: relative; }
-    html #Resume h2, body #Resume h2 {
-      font-size: 5em;
-      color: #444; }
-    html #Resume a, body #Resume a {
-      display: block;
-      color: #444;
-      font-size: 2em; }
-    html #Resume object, body #Resume object {
-      display: inline-block;
-      background-color: #fff; }
-
-/*# sourceMappingURL=main.css.map */
+/*General Styles*/
+body{
+	margin: 0px;
+	color: #fff;
+	font-family: Helvetica;
+	background-size: cover;
+	text-align: center;
+}
+.row{
+	padding: 1% 5%;
+}
+.row.section{
+	margin-bottom: 400px;
+}
+.row.section#home{
+	margin-bottom: 0px;
+}
+h1{
+	font-size: 5.5em;
+	font-weight: bold;
+}
+h2{
+	font-size: 4em;
+	font-weight: normal;
+}
+h3{
+	font-family: Satisfy;
+	font-size: 4em;
+	font-weight: normal;
+}
+h4{
+	text-align: left;
+	font-size: 2em;
+	font-weight: bold;
+	margin-bottom: 10vh;
+}
+/*Nav Bar Styles*/
+#nav{
+	padding: 5px 0px;
+	height: 3em;
+	position: fixed;
+	width: 100%;
+	background-color: #fff;
+	z-index: 100;
+}
+#nav .nav{
+	display: block;
+	padding: 
+	width: 50%;
+	margin: 0px auto;
+}
+#nav .nav li{
+	display: inline-block;
+	font-family: Helvetica;
+	font-size: 1.5em;
+	font-weight: bold;
+	width: 24%;
+	text-align: center;
+	padding: 5px;
+}
+#nav .nav li:hover{
+	cursor: pointer;
+}
+#nav .nav li a{
+	color: #444;
+	text-decoration: none;
+	text-align: center;
+	padding: 0px;
+}
+#nav .nav li a:hover{
+	background-color: rgba(255,255,255,0);
+}
+/*Home Page Styles*/
+#home{
+	background-image: url('../image/homeBG.jpg');
+	background-size: cover;
+	min-height: 100vh;
+}
+#home h1{
+	margin-top: 25vh;
+}
+/*Bio Page Styles*/
+#bio{
+	background-image: url('../image/bioBG.jpg');
+	background-size: cover;
+	min-height: 100vh;
+}
+#bio h3{
+	text-align: left;
+	margin: 1em auto;
+}
+/*Portfolio Page Styles*/
+#portfolio{
+	background-image: url('../image/portfolioBG.jpg');
+	background-size: cover;
+	min-height: 100vh;
+	overflow-y: scroll;
+	padding-bottom: 0px;
+}
+#portfolio h3{
+	margin-bottom: .3em;
+}
+#portfolio a{
+	color: #78A5A3;
+	border: 1px solid #78A5A3;
+	border-radius: 5px;
+	background-color: #fff;
+	padding: 1px 2px;
+}
+#portfolio .links{
+	margin-bottom: 5px;
+}
+#portfolio #portTop, #portfolio #portBot{
+	padding: 20px;
+	margin: 20px;
+}
+#portfolio #portTop .col-md-7, #portfolio #portBot .col-md-7{
+	background-color: rgba(120,165,163,.7);
+	border-radius: 5px;
+	border: 1px solid #fff;
+}
+#portfolio #portTop .row, #portfolio #portBot .row, #portfolio #portTop .row div, #portfolio #portBot .row div{
+	padding: 10px;
+}
+#portfolio .tech li{
+	border: 1px solid #fff;
+	border-radius: 5px;
+	display: inline-block;
+	margin: 2px;
+	padding: 4px;
+	background-color: #78A5A3;
+}
+/*Contact Page Styles*/
+#contact{
+	background-image: url('../image/contactBG.jpg');
+	background-size: cover;
+	min-height: 100vh;
+}
+#contact a{
+	text-decoration: none;
+}
+#contact a h3{
+	margin: 40vh auto 0;
+	color: #fff;
+	text-decoration: none;
+}
+#contact a span{
+	display: none;
+	color: #fff;
+	text-decoration: none;
+}
+#contact a:hover h3{
+	color: #fff;
+}
+#contact a:hover span {
+	display: block;
+	text-decoration: none;
+}
